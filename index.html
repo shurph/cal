@@ -228,13 +228,16 @@
       return html;
     }
 
-    const calendarEl = document.getElementById('calendar');
-    const monthNumbersIn2025 = [10, 11, 12];
-    const monthNumbersIn2026 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-    monthNumbersIn2025.forEach(m => {
-      calendarEl.innerHTML += createMonth(m - 1, 2025);
-    });
+    // TODO: сделать по-нормальному: выбираешь с какого месяца и года начинать показывать и по какой месяц и год заканчивать, а не хардкодить массивами
+    const calendarEl = document.getElementById('calendar');
+    // const monthNumbersIn2025 = [10, 11, 12];
+    // const monthNumbersIn2026 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    const monthNumbersIn2026 = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+    // monthNumbersIn2025.forEach(m => {
+    //   calendarEl.innerHTML += createMonth(m - 1, 2025);
+    // });
 
 
     monthNumbersIn2026.forEach(m => {
